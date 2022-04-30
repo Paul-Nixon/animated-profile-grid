@@ -1,0 +1,16 @@
+$colors: (
+    radial-gradient: (
+        100: radial-gradient(50% 40.76% at 50% 50%, #5C258D 0%, #4389A2 100%),
+        200: radial-gradient(50% 36.95% at 50% 50%, #134E5E 0%, #71B280 100%),
+        300: radial-gradient(50% 36.95% at 50% 50%, #614385 0%, #516395 100%),
+        400: radial-gradient(50% 36.95% at 50% 50%, #1A2980 0%, #26D0CE 100%),
+        500: radial-gradient(50% 36.95% at 50% 50%, #AA076B 0%, #61045F 100%)
+    ),
+    linear-gradient: (
+        100: linear-gradient(90deg, #5C258D 0%, #4389A2 100%),
+        200: linear-gradient(90deg, #134E5E 0%, #71B280 100%),
+        300: linear-gradient(90deg, #614385 0%, #516395 100%),
+        400: linear-gradient(90deg, #1A2980 0%, #26D0CE 100%),
+        500: linear-gradient(90deg, #AA076B 0%, #61045F 100%)
+    )
+)

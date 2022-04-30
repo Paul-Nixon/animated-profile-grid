@@ -1,0 +1,37 @@
+/* LAYOUT MIXINS */
+@mixin flexCenter
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flexSpaceBetween
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin flexColumn
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ELEMENT MIXINS */
+@mixin size($width, $height: $width)
+{
+    width: $width;
+    height: $height;
+}
+
+@mixin typography($font_size, $text_align, $margin: 0)
+{
+    font-size: $font_size;
+    text-align: $text_align;
+    margin: $margin;
+}
