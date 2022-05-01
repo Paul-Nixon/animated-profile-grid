@@ -24,7 +24,7 @@ export default function Profile() {
     <div className='profile' ref={profileRef} onClick={changeProfileState}>
         {isActive ? <ActiveProfile changeProfileState={changeProfileState} /> : (
           <>
-            <FontAwesomeIcon icon={faCircleUser} className="profile-img fa-fw" />
+            <FontAwesomeIcon icon={faCircleUser} className="profile-img" />
             <span className='profile-name'>Andy Jones</span>
           </>
         )}

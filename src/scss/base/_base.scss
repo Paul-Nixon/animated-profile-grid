@@ -1,0 +1,15 @@
+@use "../abstracts/functions" as func;
+@use "../abstracts/font-sizes" as fs;
+@use "../abstracts/mixins";
+
+span
+{
+    display: inline-block;
+}
+
+li
+{
+    @include mixins.typography(clamp(func.map-deep-get(fs.$font_sizes, small, 200), 1.4vw,
+            func.map-deep-get(fs.$font_sizes, large, 100)), center);
+        color: white;
+}

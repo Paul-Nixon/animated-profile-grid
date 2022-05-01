@@ -1,0 +1,25 @@
+@use "../abstracts/colors" as clr;
+@use "../abstracts/functions" as func;
+@use "../abstracts/font-sizes" as fs;
+@use "../abstracts/mixins";
+
+.profile
+{
+    @include mixins.flexColumn();
+    border-radius: 50%;
+    background-color: func.map-deep-get(clr.$colors, radial-gradient, 100);
+
+
+    .profile-img
+    {
+        @include mixins.size(4.375rem);
+        margin: 0 0 2rem;
+    }
+
+    .profile-name
+    {
+        @include mixins.typography(clamp(func.map-deep-get(fs.$font_sizes, small, 400), 1.65vw,
+            func.map-deep-get(fs.$font_sizes, large, 200)), center);
+        color: white;
+    }
+}

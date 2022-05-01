@@ -1,8 +1,0 @@
-@use "../abstracts/font-sizes" as fs;
-@use "../abstracts/functions" as func;
-
-h2
-{
-    font-size: clamp(func.map-deep-get(fs.$font_sizes, small, 500), 1.7vw,
-        func.map-deep-get(fs.$font_sizes, large, 200));
-}

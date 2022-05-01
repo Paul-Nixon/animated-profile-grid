@@ -26,12 +26,11 @@ module.exports = {
                 test: /\.scss$/,
                 use: [
                     MiniCssExtractPlugin.loader,
-                    "style-loader",
                     'css-loader',
                     'sass-loader',
                 ],
             }
         ]
     },
-    plugins: [new MiniCssExtractPlugin(), new HTMLWebpackPlugin({template: "./dist/index.html"})]
+    plugins: [new MiniCssExtractPlugin(), new HTMLWebpackPlugin()]
 };
