@@ -5,7 +5,7 @@ import Profile from './components/Profile';
 
 export default function App() {
   return (
-    <div className='profiles-wrapper'>
+    <div className='container'>
       <div className='grid'>
         <Profile />
         <Profile />

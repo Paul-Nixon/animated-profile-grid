@@ -23,14 +23,18 @@ module.exports = {
                 }
             },
             {
-                test: /\.scss$/,
+                test: /\.css$/i,
+                use: [MiniCssExtractPlugin.loader, 'css-loader']
+            },
+            {
+                test: /\.scss$/i,
                 use: [
                     MiniCssExtractPlugin.loader,
                     'css-loader',
-                    'sass-loader',
+                    'sass-loader'
                 ],
             }
         ]
     },
-    plugins: [new MiniCssExtractPlugin(), new HTMLWebpackPlugin()]
+    plugins: [new MiniCssExtractPlugin(), new HTMLWebpackPlugin({template: "./dist/index.html"})]
 };

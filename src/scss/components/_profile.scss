@@ -7,7 +7,9 @@
 {
     @include mixins.flexColumn();
     border-radius: 50%;
-    background-color: func.map-deep-get(clr.$colors, radial-gradient, 100);
+    width: 45%;
+    background-image: func.map-deep-get(clr.$colors, radial-gradient, 100);
+    cursor: pointer;
 
 
     .profile-img
@@ -21,5 +23,10 @@
         @include mixins.typography(clamp(func.map-deep-get(fs.$font_sizes, small, 400), 1.65vw,
             func.map-deep-get(fs.$font_sizes, large, 200)), center);
         color: white;
+    }
+
+    &:hover
+    {
+
     }
 }
