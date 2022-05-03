@@ -6,16 +6,16 @@
 .profile
 {
     @include mixins.flexColumn();
+    @include mixins.size(45%, 65%);
     border-radius: 50%;
-    width: 45%;
-    background-image: func.map-deep-get(clr.$colors, radial-gradient, 100);
+    background-image: func.map-deep-get(clr.$colors, radial-gradient, 400);
     cursor: pointer;
 
 
     .profile-img
     {
-        @include mixins.size(4.375rem);
-        margin: 0 0 2rem;
+        @include mixins.size(2.8125rem);
+        margin: 0 0 0.5rem;
     }
 
     .profile-name
@@ -23,10 +23,17 @@
         @include mixins.typography(clamp(func.map-deep-get(fs.$font_sizes, small, 400), 1.65vw,
             func.map-deep-get(fs.$font_sizes, large, 200)), center);
         color: white;
+        text-overflow: ellipsis;
     }
 
     &:hover
     {
+        background-image: radial-gradient(50% 40.76% at 50% 50%, #1A2980 0%, #27B1B0 100%);
+    }
 
+    &.active
+    {
+        border-radius: 0.625rem;
+        background-image: func.map-deep-get(clr.$colors, radial-gradient, 400);
     }
 }

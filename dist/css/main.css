@@ -111,22 +111,32 @@ select {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-radius: 50%;
   width: 45%;
-  background-image: radial-gradient(50% 40.76% at 50% 50%, #5C258D 0%, #4389A2 100%);
+  height: 65%;
+  border-radius: 50%;
+  background-image: radial-gradient(50% 36.95% at 50% 50%, #1A2980 0%, #26D0CE 100%);
   cursor: pointer;
 }
 .profile .profile-img {
-  width: 4.375rem;
-  height: 4.375rem;
-  margin: 0 0 2rem;
+  width: 2.8125rem;
+  height: 2.8125rem;
+  margin: 0 0 0.5rem;
 }
 .profile .profile-name {
   font-size: clamp(1.25rem, 1.65vw, 1.75rem);
   text-align: center;
   margin: 0;
   color: white;
+  text-overflow: ellipsis;
 }
+.profile:hover {
+  background-image: radial-gradient(50% 40.76% at 50% 50%, #1A2980 0%, #27B1B0 100%);
+}
+.profile.active {
+  border-radius: 0.625rem;
+  background-image: radial-gradient(50% 36.95% at 50% 50%, #1A2980 0%, #26D0CE 100%);
+}
+
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -143,15 +153,14 @@ select {
           align-items: center;
   max-width: 62.5rem;
   margin: 0 auto;
-  height: 100%;
+  height: 100vh;
 }
 
 .grid {
   display: grid;
   width: 100%;
   height: 100%;
-  gap: 1.25rem;
-  grid-template-columns: repeat(3, minmax(21.875rem, 31.25rem));
+  grid-template-columns: repeat(3, minmax(12.25rem, 25rem));
   justify-items: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
