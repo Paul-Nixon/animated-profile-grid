@@ -1,22 +1,12 @@
 import React from 'react';
 
-import Profile from './components/Profile';
+import Grid from './components/Grid';
 
 
-export default function App() {
+export default function App() {  
   return (
     <div className='container'>
-      <div className='grid'>
-        <Profile />
-        <Profile />
-        <Profile />
-        <Profile />
-        <Profile />
-        <Profile />
-        <Profile />
-        <Profile />
-        <Profile />
-      </div>
+      <Grid />
     </div>
   )
 }

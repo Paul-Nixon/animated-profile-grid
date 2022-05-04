@@ -3,6 +3,7 @@
 .container
 {
     @include mixins.flexColumn();
+    position: relative;
     max-width: 62.5rem;
     margin: 0 auto;
     height: 100vh;

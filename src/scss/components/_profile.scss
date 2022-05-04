@@ -3,10 +3,12 @@
 @use "../abstracts/font-sizes" as fs;
 @use "../abstracts/mixins";
 
+
 .profile
 {
     @include mixins.flexColumn();
     @include mixins.size(45%, 65%);
+    position: relative;
     border-radius: 50%;
     background-image: func.map-deep-get(clr.$colors, radial-gradient, 400);
     cursor: pointer;
@@ -33,7 +35,6 @@
 
     &.active
     {
-        border-radius: 0.625rem;
-        background-image: func.map-deep-get(clr.$colors, radial-gradient, 400);
+        animation: change-active 350ms ease-in-out forwards;
     }
 }
