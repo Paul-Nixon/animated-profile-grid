@@ -35,6 +35,48 @@
 
     &.active
     {
-        animation: change-active 350ms ease-in-out forwards;
+        animation: 350ms active-profile ease-in-out forwards;
+        border-radius: 0.625rem;
+
+
+        .topbar, ul
+        {
+            width: 100%;
+            padding: 0.5rem;
+        }
+
+        .topbar
+        {
+            @include mixins.flexSpaceBetween();
+            border-bottom: 1px solid white;
+
+            & div
+            {
+                @include mixins.flexCenter();
+
+                .profile-img
+                {
+                    @include mixins.size(3.125rem);
+                }
+
+                .profile-name
+                {
+                    text-align: left;
+                }
+            }
+        }
+
+        ul
+        {
+            height: 100%;
+            margin: 0;
+            color: white;
+
+            li
+            {
+                @include mixins.typography(clamp(func.map-deep-get(fs.$font_sizes, small, 400), 1.65vw,
+                    func.map-deep-get(fs.$font_sizes, large, 200)), center);
+            }
+        }
     }
 }

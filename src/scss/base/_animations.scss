@@ -3,35 +3,22 @@
 
 @keyframes fade-in
 {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
+    0% {visibility: hidden;}
+    100% {visibility: visible;}
 }
 
 @keyframes fade-out
 {
-    0% {opacity: 1;}
-    100% {opacity: 0;}
+    0% {visibility: visible;}
+    100% {visibility: hidden;}
 }
 
 @keyframes active-profile
 {
-    0%
-    {
-        @include mixins.size(45%, 65%);
-        position: relative;
+    0% {
         border-radius: 50%;
-        cursor: default;
-        z-index: 1;
     }
-    1%
-    {
-        position: absolute;
-    }
-    100%
-    {
-        left: 50%;
-        top: 50%;
+    100% {
         transform: translate(-50%, -50%);
-        z-index: 2;
-    }
+        }
 }

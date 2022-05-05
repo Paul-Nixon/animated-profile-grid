@@ -8,15 +8,25 @@ import { faCircleUser } from '@fortawesome/free-solid-svg-icons';
 import ActiveProfile from './ActiveProfile';
 
 
-export default function Profile() {
+export default function Profile({ animateGrid }) {
   const [isActive, toggleValue] = useToggle(false),
   profileRef = useRef();
 
 
   function changeProfileState()
   {
+    if (isActive)
+    {
+      profileRef.current.classList.remove("active");
+      animateGrid(false);
+    }
+    else
+    {
+      profileRef.current.classList.add("active");
+      animateGrid(true);
+    }
+
     toggleValue(!isActive);
-    isActive ? profileRef.current.classList.remove("active") : profileRef.current.classList.add("active");
   }
 
   

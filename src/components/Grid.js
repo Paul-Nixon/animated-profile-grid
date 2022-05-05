@@ -10,20 +10,20 @@ export default function Grid() {
 
   function animateGrid(isRendered)
   {
-
+      isRendered ? useAnimations(gridRef, "fade-out") : useAnimations(gridRef, "fade-in");
   }
 
   return (
     <div className='grid' ref={gridRef}>
-        <Profile />
-        <Profile />
-        <Profile />
-        <Profile />
-        <Profile />
-        <Profile />
-        <Profile />
-        <Profile />
-        <Profile />
+        <Profile animateGrid={animateGrid} />
+        <Profile animateGrid={animateGrid} />
+        <Profile animateGrid={animateGrid} />
+        <Profile animateGrid={animateGrid} />
+        <Profile animateGrid={animateGrid} />
+        <Profile animateGrid={animateGrid} />
+        <Profile animateGrid={animateGrid} />
+        <Profile animateGrid={animateGrid} />
+        <Profile animateGrid={animateGrid} />
     </div>
   )
 }

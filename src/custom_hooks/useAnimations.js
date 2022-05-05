@@ -1,13 +1,13 @@
-import React from 'react'
+import React from 'react';
 
 export default function useAnimations(ref, animation) {
   switch (animation)
   {
       case "fade-in":
-        ref.current.class.animation = `${animation} 350ms ease-in-out forwards`;
+        ref.current.classList.replace("fade-out", "fade-in");
         break;
       case "fade-out":
-        ref.current.class.animation = `${animation} 350ms ease-in-out forwards`;
+        ref.current.classList.add("fade-out");
         break;
   }
 }

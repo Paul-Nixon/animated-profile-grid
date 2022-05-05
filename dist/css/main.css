@@ -1,5 +1,55 @@
 /* LAYOUT MIXINS */
 /* ELEMENT MIXINS */
+@-webkit-keyframes fade-in {
+  0% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+@keyframes fade-in {
+  0% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+@-webkit-keyframes fade-out {
+  0% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+@keyframes fade-out {
+  0% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes active-profile {
+  0% {
+    border-radius: 50%;
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}
+@keyframes active-profile {
+  0% {
+    border-radius: 50%;
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}
 span {
   display: inline-block;
 }
@@ -113,6 +163,7 @@ select {
           align-items: center;
   width: 45%;
   height: 65%;
+  position: relative;
   border-radius: 50%;
   background-image: radial-gradient(50% 36.95% at 50% 50%, #1A2980 0%, #26D0CE 100%);
   cursor: pointer;
@@ -133,8 +184,53 @@ select {
   background-image: radial-gradient(50% 40.76% at 50% 50%, #1A2980 0%, #27B1B0 100%);
 }
 .profile.active {
+  -webkit-animation: 350ms active-profile ease-in-out forwards;
+          animation: 350ms active-profile ease-in-out forwards;
   border-radius: 0.625rem;
-  background-image: radial-gradient(50% 36.95% at 50% 50%, #1A2980 0%, #26D0CE 100%);
+}
+.profile.active .topbar, .profile.active ul {
+  width: 100%;
+  padding: 0.5rem;
+}
+.profile.active .topbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid white;
+}
+.profile.active .topbar div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.profile.active .topbar div .profile-img {
+  width: 3.125rem;
+  height: 3.125rem;
+}
+.profile.active .topbar div .profile-name {
+  text-align: left;
+}
+.profile.active ul {
+  height: 100%;
+  margin: 0;
+  color: white;
+}
+.profile.active ul li {
+  font-size: clamp(1.25rem, 1.65vw, 1.75rem);
+  text-align: center;
+  margin: 0;
 }
 
 .container {
@@ -151,6 +247,7 @@ select {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
   max-width: 62.5rem;
   margin: 0 auto;
   height: 100vh;
@@ -165,4 +262,12 @@ select {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.grid .fade-in {
+  -webkit-animation: 350ms fade-in ease-in-out forwards;
+          animation: 350ms fade-in ease-in-out forwards;
+}
+.grid .fade-out {
+  -webkit-animation: 350ms fade-out ease-in-out forwards;
+          animation: 350ms fade-out ease-in-out forwards;
 }/*# sourceMappingURL=main.css.map */
