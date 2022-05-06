@@ -8,7 +8,6 @@
 {
     @include mixins.flexColumn();
     @include mixins.size(45%, 65%);
-    position: relative;
     border-radius: 50%;
     background-image: func.map-deep-get(clr.$colors, radial-gradient, 400);
     cursor: pointer;
@@ -35,14 +34,20 @@
 
     &.active
     {
-        animation: 350ms active-profile ease-in-out forwards;
-        border-radius: 0.625rem;
+        @include mixins.size(23.75rem, 20rem);
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        background-image: func.map-deep-get(clr.$colors, linear-gradient, 400);
+        animation: 300ms active-profile ease-in-out forwards;
+        z-index: 2;
+        cursor: default;
 
 
         .topbar, ul
         {
             width: 100%;
-            padding: 0.5rem;
+            padding: 0.75rem;
         }
 
         .topbar
@@ -56,7 +61,8 @@
 
                 .profile-img
                 {
-                    @include mixins.size(3.125rem);
+                    @include mixins.size(2.5rem);
+                    margin-right: 0.5rem;
                 }
 
                 .profile-name
@@ -69,13 +75,21 @@
         ul
         {
             height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
             margin: 0;
             color: white;
 
             li
             {
-                @include mixins.typography(clamp(func.map-deep-get(fs.$font_sizes, small, 400), 1.65vw,
-                    func.map-deep-get(fs.$font_sizes, large, 200)), center);
+                @include mixins.typography(clamp(func.map-deep-get(fs.$font_sizes, small, 400), 1.6vw,
+                    func.map-deep-get(fs.$font_sizes, large, 100)), left);
+                
+                & + li
+                {
+                    margin-top: 0.25rem;
+                }
             }
         }
     }

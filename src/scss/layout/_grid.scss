@@ -6,14 +6,19 @@
     grid-template-columns: repeat(3, minmax(12.25rem, 25rem));
     justify-items: center;
     align-items: center;
+    overflow: hidden;
 
-    .fade-in
+    &.fade-in
     {
-        animation: 350ms fade-in ease-in-out forwards;
+        animation: 300ms fade-in ease-in-out forwards;
     }
 
-    .fade-out
+    &.fade-out
     {
-        animation: 350ms fade-out ease-in-out forwards;
+
+        & .profile:not(.active)
+        {
+            display: none;
+        }
     }
 }

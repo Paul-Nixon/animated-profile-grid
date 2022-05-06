@@ -13,7 +13,7 @@ export default function ActiveProfile({ changeProfileState }) {
                 <span className='profile-name'>Andy Jones</span>
             </div>
 
-            <span onClick={changeProfileState}>&times;</span>
+            <span className="close" onClick={changeProfileState}>&times;</span>
         </div>
         
         <ul role="list">

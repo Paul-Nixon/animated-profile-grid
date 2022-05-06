@@ -2,52 +2,70 @@
 /* ELEMENT MIXINS */
 @-webkit-keyframes fade-in {
   0% {
+    opacity: 0;
     visibility: hidden;
   }
   100% {
+    opacity: 1;
     visibility: visible;
   }
 }
 @keyframes fade-in {
   0% {
+    opacity: 0;
     visibility: hidden;
   }
   100% {
+    opacity: 1;
     visibility: visible;
   }
 }
 @-webkit-keyframes fade-out {
   0% {
-    visibility: visible;
+    opacity: 1;
+    visibility: hidden;
   }
   100% {
+    opacity: 0;
     visibility: hidden;
   }
 }
 @keyframes fade-out {
   0% {
-    visibility: visible;
+    opacity: 1;
+    visibility: hidden;
   }
   100% {
+    opacity: 0;
     visibility: hidden;
   }
 }
 @-webkit-keyframes active-profile {
   0% {
-    border-radius: 50%;
+    border-radius: 0.3125rem;
+    opacity: 0;
+    visibility: hidden;
   }
   100% {
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
+    border-radius: 0.625rem;
+    opacity: 1;
+    visibility: visible;
   }
 }
 @keyframes active-profile {
   0% {
-    border-radius: 50%;
+    border-radius: 0.3125rem;
+    opacity: 0;
+    visibility: hidden;
   }
   100% {
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
+    border-radius: 0.625rem;
+    opacity: 1;
+    visibility: visible;
   }
 }
 span {
@@ -144,7 +162,11 @@ select {
 }
 .close {
   color: white;
-  font-size: clamp(1.25rem, 1.6vw, 1.5rem);
+  font-size: 2.25rem;
+  cursor: pointer;
+}
+.close:hover {
+  color: #9F8E8E;
 }
 
 .profile {
@@ -163,7 +185,6 @@ select {
           align-items: center;
   width: 45%;
   height: 65%;
-  position: relative;
   border-radius: 50%;
   background-image: radial-gradient(50% 36.95% at 50% 50%, #1A2980 0%, #26D0CE 100%);
   cursor: pointer;
@@ -184,13 +205,21 @@ select {
   background-image: radial-gradient(50% 40.76% at 50% 50%, #1A2980 0%, #27B1B0 100%);
 }
 .profile.active {
-  -webkit-animation: 350ms active-profile ease-in-out forwards;
-          animation: 350ms active-profile ease-in-out forwards;
-  border-radius: 0.625rem;
+  width: 23.75rem;
+  height: 20rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background-image: -webkit-gradient(linear, left top, right top, from(#1A2980), to(#26D0CE));
+  background-image: linear-gradient(90deg, #1A2980 0%, #26D0CE 100%);
+  -webkit-animation: 300ms active-profile ease-in-out forwards;
+          animation: 300ms active-profile ease-in-out forwards;
+  z-index: 2;
+  cursor: default;
 }
 .profile.active .topbar, .profile.active ul {
   width: 100%;
-  padding: 0.5rem;
+  padding: 0.75rem;
 }
 .profile.active .topbar {
   display: -webkit-box;
@@ -216,21 +245,35 @@ select {
           align-items: center;
 }
 .profile.active .topbar div .profile-img {
-  width: 3.125rem;
-  height: 3.125rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-right: 0.5rem;
 }
 .profile.active .topbar div .profile-name {
   text-align: left;
 }
 .profile.active ul {
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   margin: 0;
   color: white;
 }
 .profile.active ul li {
-  font-size: clamp(1.25rem, 1.65vw, 1.75rem);
-  text-align: center;
+  font-size: clamp(1.25rem, 1.6vw, 1.5rem);
+  text-align: left;
   margin: 0;
+}
+.profile.active ul li + li {
+  margin-top: 0.25rem;
 }
 
 .container {
@@ -262,12 +305,12 @@ select {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  overflow: hidden;
 }
-.grid .fade-in {
-  -webkit-animation: 350ms fade-in ease-in-out forwards;
-          animation: 350ms fade-in ease-in-out forwards;
+.grid.fade-in {
+  -webkit-animation: 300ms fade-in ease-in-out forwards;
+          animation: 300ms fade-in ease-in-out forwards;
 }
-.grid .fade-out {
-  -webkit-animation: 350ms fade-out ease-in-out forwards;
-          animation: 350ms fade-out ease-in-out forwards;
+.grid.fade-out .profile:not(.active) {
+  display: none;
 }/*# sourceMappingURL=main.css.map */

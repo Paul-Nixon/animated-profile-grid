@@ -4,6 +4,11 @@
 .close
 {
     color: white;
-    font-size: clamp(func.map-deep-get(fs.$font_sizes, small, 400), 1.6vw,
-        func.map-deep-get(fs.$font_sizes, large, 100));
+    font-size: func.map-deep-get(fs.$font_sizes, large, 400);
+    cursor: pointer;
+
+    &:hover
+    {
+        color: #9F8E8E;
+    }
 }
