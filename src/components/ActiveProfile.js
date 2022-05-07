@@ -1,10 +1,11 @@
 import React from 'react';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCircleUser } from '@fortawesome/free-solid-svg-icons';
+import { faCircleUser, faFlag, faMessage, faUserPlus, faBan,
+         faUser } from '@fortawesome/free-solid-svg-icons';
 
 
-export default function ActiveProfile({ changeProfileState }) {
+export default function ActiveProfile({ makeProfileInactive }) {
   return (
     <>
         <div className='topbar'>
@@ -13,7 +14,7 @@ export default function ActiveProfile({ changeProfileState }) {
                 <span className='profile-name'>Andy Jones</span>
             </div>
 
-            <span className="close" onClick={changeProfileState}>&times;</span>
+            <span className="close" onClick={makeProfileInactive}>&times;</span>
         </div>
         
         <ul role="list">
@@ -22,6 +23,29 @@ export default function ActiveProfile({ changeProfileState }) {
             <li>Profession:</li>
             <li>Hobbies:</li>
             <li>Goals:</li>
+        </ul>
+
+        <ul role="menu">
+            <li>
+              <FontAwesomeIcon icon={faUser} className="menu-icon fa-fw" />
+              View Profile
+            </li>
+            <li>
+              <FontAwesomeIcon icon={faUserPlus} className="menu-icon fa-fw" />
+              Add Friend
+            </li>
+            <li>
+              <FontAwesomeIcon icon={faBan} className="menu-icon fa-fw" />
+              Block
+            </li>
+            <li>
+              <FontAwesomeIcon icon={faFlag} className="menu-icon fa-fw" />
+              Report
+            </li>
+            <li>
+              <FontAwesomeIcon icon={faMessage} className="menu-icon fa-fw" />
+              Direct Message
+            </li>
         </ul>
     </>
   )

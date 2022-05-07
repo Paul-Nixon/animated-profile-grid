@@ -13,26 +13,25 @@ export default function Profile({ animateGrid }) {
   profileRef = useRef();
 
 
-  function changeProfileState()
+  function makeProfileActive()
   {
-    if (isActive)
-    {
-      profileRef.current.classList.remove("active");
-      animateGrid(false);
-    }
-    else
-    {
-      profileRef.current.classList.add("active");
-      animateGrid(true);
-    }
+    if (isActive) return;
 
+    profileRef.current.classList.add("active");
+    animateGrid(true);
     toggleValue(!isActive);
   }
 
+  function makeProfileInactive()
+  {
+    profileRef.current.classList.remove("active");
+    animateGrid(false);
+    toggleValue(!isActive);
+  }
   
   return (
-    <div className='profile' ref={profileRef} onClick={changeProfileState}>
-        {isActive ? <ActiveProfile changeProfileState={changeProfileState} /> : (
+    <div className='profile' ref={profileRef} onClick={makeProfileActive}>
+        {isActive ? <ActiveProfile makeProfileInactive={makeProfileInactive} /> : (
           <>
             <FontAwesomeIcon icon={faCircleUser} className="profile-img" />
             <span className='profile-name'>Andy Jones</span>
