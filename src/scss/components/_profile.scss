@@ -34,7 +34,8 @@
 
     &.active
     {
-        @include mixins.size(23.75rem, 20rem);
+        @include mixins.flexColumn();
+        @include mixins.size(45%);
         position: absolute;
         left: 50%;
         top: 50%;
@@ -48,6 +49,8 @@
         {
             width: 100%;
             padding: 0.75rem;
+            min-height: 0;
+            overflow-y: hidden;
         }
 
         .topbar
@@ -80,10 +83,12 @@
             align-items: flex-start;
             margin: 0;
             color: white;
+            overflow-y: hidden;
+
 
             li
             {
-                @include mixins.typography(clamp(func.map-deep-get(fs.$font_sizes, small, 400), 1.6vw,
+                @include mixins.typography(clamp(func.map-deep-get(fs.$font_sizes, small, 200), 1.45vw,
                     func.map-deep-get(fs.$font_sizes, large, 100)), left);
                 
                 & + li
@@ -94,7 +99,21 @@
 
             &[role='menu'] li
             {
-                
+                @include mixins.flexCenter();
+                cursor: pointer;
+
+                .menu-icon
+                {
+                    @include mixins.typography(clamp(func.map-deep-get(fs.$font_sizes, small, 200), 1.45vw,
+                        func.map-deep-get(fs.$font_sizes, large, 100)), left);
+                    color: inherit;
+                    margin-right: 0.75rem;
+                }
+
+                &:hover
+                {
+                    color: yellow;
+                }
             }
         }
     }

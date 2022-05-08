@@ -31,7 +31,7 @@ export default function Profile({ animateGrid }) {
   
   return (
     <div className='profile' ref={profileRef} onClick={makeProfileActive}>
-        {isActive ? <ActiveProfile makeProfileInactive={makeProfileInactive} /> : (
+        {isActive ? <ActiveProfile type={"list"} makeProfileInactive={makeProfileInactive} /> : (
           <>
             <FontAwesomeIcon icon={faCircleUser} className="profile-img" />
             <span className='profile-name'>Andy Jones</span>
