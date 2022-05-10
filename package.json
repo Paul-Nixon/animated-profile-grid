@@ -1,5 +1,5 @@
 {
-  "name": "flashy-profile-display",
+  "name": "animated-profile-grid",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Paul-Nixon/flashy-profile-display.git"
+    "url": "git+https://github.com/Paul-Nixon/animated-profile-grid.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Paul-Nixon/flashy-profile-display/issues"
+    "url": "https://github.com/Paul-Nixon/animated-profile-grid/issues"
   },
-  "homepage": "https://github.com/Paul-Nixon/flashy-profile-display#readme",
+  "homepage": "https://github.com/Paul-Nixon/animated-profile-grid#readme",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
     "@fortawesome/free-solid-svg-icons": "^6.1.1",
