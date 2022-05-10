@@ -27,7 +27,7 @@ export default function ActiveProfile({ type, makeProfileInactive }) {
                 Hobbies: Video games, watching basketball &amp; football, watching pro
                 wrestling, watching tokusatsu, reading manga, watching anime
               </li>
-              <li>Goals: Owning a home, getting at least 100 views on this video</li>
+              <li>Goals: Owning a home, getting at least 100 views on this video ;&#41;</li>
             </ul>
           </>
         )}

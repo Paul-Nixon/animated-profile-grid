@@ -2,6 +2,7 @@
 @use "../abstracts/functions" as func;
 @use "../abstracts/font-sizes" as fs;
 @use "../abstracts/mixins";
+@use "../abstracts/breakpoints" as brkpnt;
 
 
 .profile
@@ -16,13 +17,13 @@
     .profile-img
     {
         @include mixins.size(2.8125rem);
-        margin: 0 0 0.5rem;
+        margin-bottom: 0.5rem;
     }
 
     .profile-name
     {
-        @include mixins.typography(clamp(func.map-deep-get(fs.$font_sizes, small, 400), 1.65vw,
-            func.map-deep-get(fs.$font_sizes, large, 200)), center);
+        @include mixins.typography(clamp(func.map-deep-get(fs.$font_sizes, small, 300), 1.55vw,
+            func.map-deep-get(fs.$font_sizes, large, 100)), center);
         color: white;
         text-overflow: ellipsis;
     }
@@ -35,7 +36,9 @@
     &.active
     {
         @include mixins.flexColumn();
-        @include mixins.size(45%);
+        @include mixins.size(55%);
+        max-width: 500px;
+        max-height: 550px;
         position: absolute;
         left: 50%;
         top: 50%;
@@ -50,7 +53,6 @@
             width: 100%;
             padding: 0.75rem;
             min-height: 0;
-            overflow-y: hidden;
         }
 
         .topbar
@@ -83,7 +85,7 @@
             align-items: flex-start;
             margin: 0;
             color: white;
-            overflow-y: hidden;
+            
 
 
             li
@@ -115,6 +117,39 @@
                     color: yellow;
                 }
             }
+        }
+    }
+}
+
+@media (max-width: map-get(brkpnt.$breakpoints, medium))
+{
+    .profile
+    {
+        width: 60%;
+
+        .profile-img
+        {
+            @include mixins.size(2.5rem);
+            margin-bottom: 0.25rem;
+        }
+
+        &.active
+        {
+            @include mixins.size(60%);
+        }
+    }
+}
+
+@media (max-width: map-get(brkpnt.$breakpoints, small))
+{
+    .profile
+    {
+        width: 80%;
+
+
+        &.active
+        {
+            height: 60%;
         }
     }
 }
