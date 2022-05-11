@@ -17,11 +17,12 @@ I recently became employed, so I created this project to both kill some time bef
 
 # **What I Learned**
 * Figma is a godsend for me. It helped me play with the grid's layout, import some styles to SCSS/CSS, and ultimately focus more on its functionality than designing it. I'm currently inexperienced with the tool, but I'll definitely use it for future projects.
-* Animations are fun but frustrating to work with if you're not at least decent w/CSS.
+* Animations are fun but frustrating to work with if you're inexperienced with them. Most of the production time was spent ensuring they appeared similar to the Figma project's prototype and utilizing ReactJS to render simultaneous animations. I'm satisfied with the finished product, but I want to use animations in subsequent projects, so my CSS skills need to improve.
+* Establishing a productive workflow and following it is better than adjusting everything on the fly. Before this project, my workflow was the following: Brainstorm ideas -> Research -> 
 # **Screenshots**
 # **Technologies**
 # **Installation**
-See `INSTALL.md` to learn how to install this project.<br></br>
+See `INSTALL.md` for more information.<br></br>
 # **Contributing**
 # **Contact**
 # **Acknowledgments**
