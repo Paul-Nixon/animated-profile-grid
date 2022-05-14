@@ -25,8 +25,8 @@ I recently became employed, so I created this project to both kill some time bef
 ![GIF of the menu version of an active profile on desktop](https://user-images.githubusercontent.com/42850145/168402054-28e47b61-bd02-4ad7-b735-64244d2175cd.gif)<br></br>
 
 ## **Mobile**
-![GIF of the list version of an active profile on mobile](https://user-images.githubusercontent.com/42850145/168402464-c835b4a9-b4d8-455d-bcfa-4bd792e3742f.mp4)
-![GIF of the menu version of an active profile on mobile](https://user-images.githubusercontent.com/42850145/168402642-09112a81-1247-4418-a8ad-240e6700bb6b.mp4)<br></br>
+![GIF of the list version of an active profile on mobile](https://user-images.githubusercontent.com/42850145/168403268-ed3c6f54-fd93-40f5-8a3a-81b1fb63f6db.gif)
+![GIF of the menu version of an active profile on mobile](https://user-images.githubusercontent.com/42850145/168403009-20228238-e639-447a-9193-9c2605ec7bef.gif)<br></br>
 
 # **Technologies**
 * [React.js ^18.1.0](https://reactjs.org/)<br></br>
