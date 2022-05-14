@@ -21,14 +21,12 @@ I recently became employed, so I created this project to both kill some time bef
 
 # **Screenshots**
 ## **Desktop**
-![Image of the profile grid on desktop](https://user-images.githubusercontent.com/42850145/168182209-f4b086d7-3fbb-4c8a-8d14-6e83f1ff2b65.png)
-![Image of the list version of an active profile on desktop](https://user-images.githubusercontent.com/42850145/168182450-556b8297-b3cf-469f-9363-e1330e2fdb18.png)
-![Image of the menu version of an active profile on desktop](https://user-images.githubusercontent.com/42850145/168182750-f8a621f6-46ef-4d1c-bef5-6c11d84bf924.png)<br></br>
+![GIF of the list version of an active profile on desktop](https://user-images.githubusercontent.com/42850145/168401388-0dd86dd4-7fbb-47c5-87e1-c396e02b2c89.gif)
+![GIF of the menu version of an active profile on desktop](https://user-images.githubusercontent.com/42850145/168402054-28e47b61-bd02-4ad7-b735-64244d2175cd.gif)<br></br>
 
 ## **Mobile**
-![Image of the profile grid on mobile](https://user-images.githubusercontent.com/42850145/168183652-bb3ed8b5-f904-4b1a-8025-0ca3d5b6b939.png)
-![Image of the list version of an active profile on mobile](https://user-images.githubusercontent.com/42850145/168183518-aee98796-d7dd-4862-83a8-0f1fe4a403d7.png)
-![Image of the menu version of an active profile on mobile](https://user-images.githubusercontent.com/42850145/168183958-9f49ad85-d748-43fd-bfd0-83998a626c37.png)<br></br>
+![GIF of the list version of an active profile on mobile](https://user-images.githubusercontent.com/42850145/168402464-c835b4a9-b4d8-455d-bcfa-4bd792e3742f.mp4)
+![GIF of the menu version of an active profile on mobile](https://user-images.githubusercontent.com/42850145/168402642-09112a81-1247-4418-a8ad-240e6700bb6b.mp4)<br></br>
 
 # **Technologies**
 * [React.js ^18.1.0](https://reactjs.org/)<br></br>
