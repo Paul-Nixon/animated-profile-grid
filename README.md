@@ -6,8 +6,7 @@ A grid consisting of user-profile bubbles that, when clicked/tapped, can render 
 * [What I Learned](https://github.com/Paul-Nixon/animated-profile-grid#what-i-learned)
 * [Screenshots](https://github.com/Paul-Nixon/animated-profile-grid#screenshots)
 * [Technologies](https://github.com/Paul-Nixon/animated-profile-grid#technologies)
-* [Getting Started](https://github.com/Paul-Nixon/animated-profile-grid#getting-started)
-* [Contributing](https://github.com/Paul-Nixon/animated-profile-grid#contributing)
+* [Installation](https://github.com/Paul-Nixon/animated-profile-grid#getting-started)
 * [Contact](https://github.com/Paul-Nixon/animated-profile-grid#contact)
 * [Acknowledgments](https://github.com/Paul-Nixon/animated-profile-grid#acknowledgments)
 * [License](https://github.com/Paul-Nixon/animated-profile-grid#license)<br></br>
@@ -34,19 +33,14 @@ I recently became employed, so I created this project to both kill some time bef
 # **Installation**
 See `INSTALL.md` for more information.<br></br>
 
-# **Contributing**
-1. Fork the project
-2. Create your feature branch (git checkout -b feature/YourFeature)
-3. Commit your changes (git commit -m 'Added some new feature')
-4. Push to your branch (git push origin feature/YourFeature)<br></br>
-
 # **Contact**
 * nixonp4@gmail.com
 * [LinkedIn](https://www.linkedin.com/in/paul-vance-nixon/)
 * [Twitter](https://twitter.com/PeacefulPaladin)<br></br>
 
 # **Acknowledgments**
-* [Font Awesome](https://fontawesome.com/)<br></br>
+* [Font Awesome](https://fontawesome.com/)
+* [SASS](https://sass-lang.com/)<br></br>
 
 # **License**
 Distributed under the MIT License. See `LICENSE.txt` for more information.
