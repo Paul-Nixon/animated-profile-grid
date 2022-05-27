@@ -15,8 +15,9 @@ A grid consisting of user-profile bubbles that, when clicked/tapped, can render 
 I recently became employed, so I created this project to both kill some time before I start next month and learn & refine some skills that'll increase my productivity while working. It can be implemented in social media projects by using it as an alternative to list-style structures for friends lists, search results that appear based on a search query, etc. Nothing wrong with giving users more options to do something :).<br></br>
 
 # **What I Learned**
-* Figma is a godsend for me. It helped me play with the grid's layout, import some styles to SCSS/CSS, and ultimately focus more on its functionality than designing it. I'm currently inexperienced with the tool, but I'll definitely use it for future projects.
-* Animations are fun but frustrating to work with if you're inexperienced with them. Most of the production time was spent ensuring they appeared similar to the Figma project's prototype and utilizing ReactJS to render simultaneous animations. I'm satisfied with the finished product, but I want to use animations in subsequent projects, so my CSS skills need to improve.<br></br>
+I detail what I learned from this project in the [Youtube video](https://youtu.be/IYgQbgYYEOI) I made, but I'll summarize them here:
+* Figma efficiently changed my typical workflow & I'll definitely use it for future projects.
+* I need to actively grow as a programmer & person to achieve the professional and life goals I desire.<br></br>
 
 # **Screenshots**
 ## **Desktop**
@@ -28,7 +29,8 @@ I recently became employed, so I created this project to both kill some time bef
 ![GIF of the menu version of an active profile on mobile](https://user-images.githubusercontent.com/42850145/168403009-20228238-e639-447a-9193-9c2605ec7bef.gif)<br></br>
 
 # **Technologies**
-* [React.js ^18.1.0](https://reactjs.org/)<br></br>
+* [React.js (^18.1.0)](https://reactjs.org/)
+* [Node.js (>=6.9.0)](https://nodejs.org/en/)<br></br>
 
 # **Installation**
 See `INSTALL.md` for more information.<br></br>
