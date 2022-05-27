@@ -16,7 +16,7 @@ I recently became employed, so I created this project to both kill some time bef
 
 # **What I Learned**
 I detail what I learned from this project in the [Youtube video](https://youtu.be/IYgQbgYYEOI) I made, but I'll summarize them here:
-* Figma efficiently changed my typical workflow & I'll definitely use it for future projects.
+* [Figma](https://www.figma.com/file/QdhzAWJe0GvGuf5Ij6nHRg/animated-profile-grid) efficiently changed my typical workflow & I'll definitely use it for future projects.
 * I need to actively grow as a programmer & person to achieve the professional and life goals I desire.<br></br>
 
 # **Screenshots**
